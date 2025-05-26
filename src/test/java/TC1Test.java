@@ -9,6 +9,30 @@ import static org.testng.Assert.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.time.Duration;
 
+/****************************************
+ * Historia de Usuario:
+ * Como usuario registrado,
+ * quiero iniciar sesión en la aplicación web local,
+ * para acceder al panel principal (dashboard).
+ *
+ * Prueba de Aceptación:
+ * Verificar que el sistema permita el inicio de sesión con credenciales válidas,
+ * redirigiendo correctamente al dashboard con los elementos visibles.
+ *
+ * Pasos:
+ * 1. Ingresar a la aplicación web: http://localhost:5173/
+ * 2. Verificar que el título sea "login"
+ * 3. Ingresar nombre de usuario: "admin"
+ * 4. Ingresar contraseña: "adminpass"
+ * 5. Hacer clic en el botón de login
+ * 6. Verificar redirección a la URL que contiene "/dashboard"
+ * 7. Verificar que el encabezado diga "Dashboard"
+ * 8. Verificar que el formulario de ingreso de datos esté visible
+ *
+ * Resultado Esperado:
+ * El usuario debe ser redirigido correctamente al dashboard, 
+ * y debe visualizar el título "Dashboard" y el formulario con ID "name".
+ ****************************************/
 
 public class TC1Test {
     private WebDriver driver;
