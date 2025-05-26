@@ -30,21 +30,31 @@
     </dependency>
   </dependencies>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <test></test> <!-- evita error cuando no se usa -Dtest -->
+  </properties>
 
-    <build>
+  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
         <configuration>
+          <properties>
+            <property>
+              <name>usedefaultlisteners</name>
+              <value>true</value>
+            </property>
+          </properties>
           <suiteXmlFiles>
             <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
+          <includes>
+            <include>${test}.java</include>
+          </includes>
         </configuration>
       </plugin>
     </plugins>
