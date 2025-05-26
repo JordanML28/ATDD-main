@@ -23,13 +23,13 @@ ATDD-main/
 
 ## 🧪 Ejecutar pruebas
 ```bash
-mvn -Dtest=tests.TC1Test test
+mvn -Dtest=TC1Test test
 ```
 ```bash
-mvn -Dtest=tests.TC2Test test
+mvn -Dtest=TC2Test test
 ```
 ```bash
-mvn -Dtest=tests.TC3Test test
+mvn -Dtest=TC3Test test
 ```
 ### Ejecutar todas las pruebas
 ```bash
