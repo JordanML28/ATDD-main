@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" verbose="1" sequential="true">
+  <test name="Login Correcto">
+    <classes>
+      <class name="TC1Test" />
+    </classes>
+  </test>
+
+  <test name="Login Incorrecto">
+    <classes>
+      <class name="TC2Test" />
+    </classes>
+  </test>
+
+  <test name="Formulario Dashboard">
+    <classes>
+      <class name="TC3Test" />
+    </classes>
+  </test>
+</suite>
