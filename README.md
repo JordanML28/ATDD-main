@@ -22,13 +22,16 @@ ATDD-main/
 - ChromeDriver compatible con tu versión de Chrome
 
 ## 🧪 Ejecutar pruebas
+```bash
 mvn -Dtest=tests.TC1Test test
-
+```
+```bash
 mvn -Dtest=tests.TC2Test test
-
+```
+```bash
 mvn -Dtest=tests.TC3Test test
-
+```
 ### Ejecutar todas las pruebas
-
 ```bash
 mvn clean test
+```
